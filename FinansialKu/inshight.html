@@ -1,0 +1,396 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Overview Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Inter&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #a1b87a 0%, #7f9e6a 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .font-fredoka {
+      font-family: "Poppins", sans-serif;
+    }
+    
+  </style>
+ </head> 
+
+ <body class="bg-[#c4e538] min-h-screen flex flex-col">
+  
+<!-- Navbar -->
+  <header class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Primary Navigation" class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <img alt=class="w-10 h-10" height="100" src="images/LOGO.png" width="100" />
+          <span class="font-semibold text-lg text-[#3F704D]">
+            FinancialKu
+        </div>
+        <ul class="hidden md:flex items-center space-x-6 text-[14px] font-semibold text-[#7aa92a] select-none">
+          <li>
+            <a class="text-[#3F704D] font-extrabold" href="Home.html"">
+          HOME
+         </a>
+      </li>
+      <li>
+        <a class=" hover:text-[#3F704D] transition-colors" href="overview.html">
+              INSIGHT
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="laporankeuangan.html">
+              LAPORAN KEUANGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="transaksi.html">
+              TRANSAKSI
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="celengan.html">
+              CELENGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="edukasi.html">
+              EDUKASI
+            </a>
+          </li>
+        </ul>
+        <div class="hidden md:flex items-center space-x-3 text-[13px] font-extrabold select-none">
+          <a class="text-[#7aa92a] hover:text-[#3F704D] transition-colors" href="daftar2.html">
+            DAFTAR
+          </a>
+          <a class="bg-[#7aa92a] rounded-full text-white font-bold text-xs px-4 py-1.5 transition-colors duration-300 hover:bg-[#3F704D] hover:text-white shadow-md hover:shadow-lg active:scale-95"
+            href="masuk.html">
+            MASUK
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button aria-label="Open menu" class="text-white focus:outline-none" id="mobile-menu-button">
+            <i class="fas fa-bars fa-lg">
+            </i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+   <section class="mb-8 flex flex-col md:flex-row md:items-center md:space-x-6">
+    <div>
+     <h1 class="font-fredoka text-white text-4xl md:text-5xl mb-1 select-none">
+      OVERVIEW
+     </h1>
+     <p class="text-[#4a5f3a] font-semibold text-sm md:text-base select-none">
+      18 Maret 2025
+     </p>
+    </div>
+    <div class="flex items-center bg-[#d1dfb9cc] rounded-xl p-4 mt-4 md:mt-0 md:flex-1">
+     <img alt="Wallet icon in dark green" class="w-10 h-10 mr-4 flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/aba840a3-76aa-433d-10b2-c56055fb9a3b.jpg" width="40"/>
+     <div class="flex justify-between w-full items-center">
+      <div class="text-[#2f4f2f] font-semibold text-sm md:text-base leading-tight">
+       <p>
+        Saldo Cash/
+       </p>
+       <p>
+        Rekening/ Dana
+       </p>
+      </div>
+      <p class="text-[#2f4f2f] font-extrabold text-lg md:text-2xl whitespace-nowrap">
+       Rp. 4.000.000
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex items-center space-x-4">
+     <img alt="Money bag icon in dark green" class="w-7 h-7 flex-shrink-0" height="30" src="https://storage.googleapis.com/a1aa/image/1be8ebad-7b43-42e3-7128-77c2e4713202.jpg" width="30"/>
+     <div>
+      <p class="text-xs text-[#4a5f3a] mb-1 select-none">
+       Pemasukan
+      </p>
+      <p class="text-[#2f4f2f] font-extrabold text-base select-none">
+       Rp.
+      </p>
+     </div>
+    </div>
+    <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex items-center space-x-4">
+     <img alt="Money bag icon in dark green" class="w-7 h-7 flex-shrink-0" height="30" src="https://storage.googleapis.com/a1aa/image/1be8ebad-7b43-42e3-7128-77c2e4713202.jpg" width="30"/>
+     <div>
+      <p class="text-xs text-[#4a5f3a] mb-1 select-none">
+       Pemasukan
+      </p>
+      <p class="text-[#2f4f2f] font-extrabold text-base select-none">
+       Rp.
+      </p>
+     </div>
+    </div>
+    <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex items-center space-x-4">
+     <img alt="Dollar sign icon in dark green" class="w-7 h-7 flex-shrink-0" height="30" src="https://storage.googleapis.com/a1aa/image/be4cdf99-2ed1-4b85-4300-5b8caf0d4c2c.jpg" width="30"/>
+     <div>
+      <p class="text-xs text-[#4a5f3a] mb-1 select-none">
+       Pemasukan
+      </p>
+      <p class="text-[#2f4f2f] font-extrabold text-base select-none">
+       Rp.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+    <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex-1">
+     <div class="flex justify-between items-center mb-3">
+      <h2 class="font-semibold text-[#2f4f2f] text-lg select-none">
+       Transaksi Terakhir
+      </h2>
+      <button aria-label="Next" class="bg-[#2f4f2f] text-white rounded px-2 py-1 text-lg font-bold select-none">
+       &gt;
+      </button>
+     </div>
+     <table class="w-full text-sm text-[#2f4f2f]">
+      <tbody>
+       <tr class="border-b border-[#a1b87a]">
+        <td class="pr-3 w-14 font-semibold select-none">
+         22:01
+        </td>
+        <td class="select-none">
+         Starbucek
+        </td>
+        <td class="px-2">
+         <span class="bg-[#4ea9e1] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Dana
+         </span>
+        </td>
+        <td class="text-[#e94a4a] font-semibold select-none text-right w-28">
+         -Rp. 75.000
+        </td>
+       </tr>
+       <tr class="border-b border-[#a1b87a]">
+        <td class="pr-3 w-14 font-semibold select-none">
+         18:33
+        </td>
+        <td class="select-none">
+         Utang ucup
+        </td>
+        <td class="px-2">
+         <span class="bg-[#a1b87a] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Cash
+         </span>
+        </td>
+        <td class="text-[#3a9a3a] font-semibold select-none text-right w-28">
+         +Rp. 50.000
+        </td>
+       </tr>
+       <tr class="border-b border-[#a1b87a]">
+        <td class="pr-3 w-14 font-semibold select-none">
+         17:30
+        </td>
+        <td class="select-none">
+         Baju lebaran guccieji
+        </td>
+        <td class="px-2">
+         <span class="bg-[#f47a8a] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Rekening
+         </span>
+        </td>
+        <td class="text-[#e94a4a] font-semibold select-none text-right w-28">
+         -Rp. 25.000.000
+        </td>
+       </tr>
+       <tr class="border-b border-[#a1b87a]">
+        <td class="pr-3 w-14 font-semibold select-none">
+         14:54
+        </td>
+        <td class="select-none">
+         THR ayang
+        </td>
+        <td class="px-2">
+         <span class="bg-[#4ea9e1] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Dana
+         </span>
+        </td>
+        <td class="text-[#3a9a3a] font-semibold select-none text-right w-28">
+         +Rp. 100.000
+        </td>
+       </tr>
+       <tr class="border-b border-[#a1b87a]">
+        <td class="pr-3 w-14 font-semibold select-none">
+         14:08
+        </td>
+        <td class="select-none">
+         Bakso bang asep
+        </td>
+        <td class="px-2">
+         <span class="bg-[#a1b87a] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Cash
+         </span>
+        </td>
+        <td class="text-[#e94a4a] font-semibold select-none text-right w-28">
+         -Rp. 10.000
+        </td>
+       </tr>
+       <tr class="border-b border-[#a1b87a]">
+        <td class="pr-3 w-14 font-semibold select-none">
+         12:00
+        </td>
+        <td class="select-none">
+         Takjil
+        </td>
+        <td class="px-2">
+         <span class="bg-[#a1b87a] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Cash
+         </span>
+        </td>
+        <td class="text-[#e94a4a] font-semibold select-none text-right w-28">
+         -Rp. 15.000
+        </td>
+       </tr>
+       <tr>
+        <td class="pr-3 w-14 font-semibold select-none">
+         09:12
+        </td>
+        <td class="select-none">
+         Es jeruk
+        </td>
+        <td class="px-2">
+         <span class="bg-[#4ea9e1] text-white rounded-full px-3 py-0.5 select-none text-xs font-semibold">
+          Dana
+         </span>
+        </td>
+        <td class="text-[#e94a4a] font-semibold select-none text-right w-28">
+         -Rp. 5.000
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="bg-[#d1dfb9cc] rounded-xl p-4 w-full md:w-[320px] flex flex-col space-y-4">
+     <div class="flex justify-between items-center">
+      <h2 class="font-semibold text-[#2f4f2f] text-lg select-none">
+       Celengan
+      </h2>
+      <button aria-label="Next" class="bg-[#2f4f2f] text-white rounded px-2 py-1 text-lg font-bold select-none">
+       &gt;
+      </button>
+     </div>
+     <div class="bg-white bg-opacity-20 rounded-lg p-3">
+      <p class="font-semibold text-xs text-[#2f4f2f] select-none">
+       Beli ipad
+      </p>
+      <p class="text-[9px] text-[#2f4f2f] mb-1 select-none">
+       Target, Juni 2025
+      </p>
+      <div class="flex justify-between text-[9px] text-[#2f4f2f] mb-1 select-none">
+       <span>
+        Rp. 2.000/10.500.000
+       </span>
+       <span>
+        <i class="fas fa-shield-alt text-[#2f4f2f]">
+        </i>
+       </span>
+      </div>
+      <div class="w-full bg-[#2f4f2f] bg-opacity-20 rounded-full h-3 relative overflow-hidden">
+       <div class="bg-[#2f4f2f] h-3 rounded-full w-[0.06%]">
+       </div>
+      </div>
+      <p class="text-[8px] text-[#2f4f2f] mt-0.5 select-none">
+       0,02%
+      </p>
+     </div>
+     <div class="bg-white bg-opacity-20 rounded-lg p-3">
+      <p class="font-semibold text-xs text-[#2f4f2f] select-none">
+       Renov Rumah
+      </p>
+      <p class="text-[9px] text-[#2f4f2f] mb-1 select-none">
+       Target, Des 2025
+      </p>
+      <div class="flex justify-between text-[9px] text-[#2f4f2f] mb-1 select-none">
+       <span>
+        Rp. 10.000.000/50.000.000
+       </span>
+       <span>
+        <i class="fas fa-shield-alt text-[#2f4f2f]">
+        </i>
+       </span>
+      </div>
+      <div class="w-full bg-[#2f4f2f] bg-opacity-20 rounded-full h-3 relative overflow-hidden">
+       <div class="bg-[#2f4f2f] h-3 rounded-full w-[20%]">
+       </div>
+      </div>
+      <p class="text-[8px] text-[#2f4f2f] mt-0.5 select-none">
+       20%
+      </p>
+     </div>
+     <div class="bg-white bg-opacity-20 rounded-lg p-3">
+      <p class="font-semibold text-xs text-[#2f4f2f] select-none">
+       Ke Korea
+      </p>
+      <p class="text-[9px] text-[#2f4f2f] mb-1 select-none">
+       Target, Maret 2026
+      </p>
+      <div class="flex justify-between text-[9px] text-[#2f4f2f] mb-1 select-none">
+       <span>
+        Rp. 500.000/15.000.000
+       </span>
+       <span>
+        <i class="fas fa-plane text-[#2f4f2f]">
+        </i>
+       </span>
+      </div>
+      <div class="w-full bg-[#2f4f2f] bg-opacity-20 rounded-full h-3 relative overflow-hidden">
+       <div class="bg-[#2f4f2f] h-3 rounded-full w-[3.33%]">
+       </div>
+      </div>
+      <p class="text-[8px] text-[#2f4f2f] mt-0.5 select-none">
+       3,33%
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col items-center w-full md:w-[280px]">
+     <h2 class="font-fredoka text-white text-lg mb-4 select-none">
+      Statistik
+     </h2>
+     <div class="relative w-48 h-48">
+      <svg class="w-48 h-48" viewbox="0 0 36 36">
+       <circle class="text-[#d1dfb9cc]" cx="18" cy="18" fill="transparent" r="16" stroke="#d1dfb9cc" stroke-width="4">
+       </circle>
+       <circle class="text-[#4ea9e1]" cx="18" cy="18" fill="transparent" r="16" stroke="#4ea9e1" stroke-dasharray="48.9 100" stroke-linecap="round" stroke-width="4" transform="rotate(-90 18 18)">
+       </circle>
+       <circle class="text-[#2f4f2f]" cx="18" cy="18" fill="transparent" r="16" stroke="#2f4f2f" stroke-dasharray="36.2 100" stroke-linecap="round" stroke-width="4" transform="rotate(48 18 18)">
+       </circle>
+       <circle class="text-[#f47a8a]" cx="18" cy="18" fill="transparent" r="16" stroke="#f47a8a" stroke-dasharray="14.9 100" stroke-linecap="round" stroke-width="4" transform="rotate(132 18 18)">
+       </circle>
+      </svg>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-[#a1b87a]">
+      </div>
+      <div class="absolute top-[30%] left-[20%] text-[10px] text-[#2f4f2f] font-semibold select-none">
+       Cash
+       <br/>
+       36.2%
+      </div>
+      <div class="absolute top-[30%] right-[20%] text-[10px] text-[#4ea9e1] font-semibold select-none text-right">
+       Dana
+       <br/>
+       48.9%
+      </div>
+      <div class="absolute bottom-[25%] left-1/2 -translate-x-1/2 text-[10px] text-[#f47a8a] font-semibold select-none">
+       Rekening
+       <br/>
+       14.9%
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+ </body>
+</html>
