@@ -19,72 +19,73 @@
   </style>
  </head>
  <body class="bg-gradient-to-br from-[#9cc88d] to-[#7f9e6a] min-h-screen flex flex-col">
-  <!-- Navbar -->
-  <header class="bg-gradient-to-r from-[#c9e74a] to-[#d9f06f]">
+<!-- Navbar -->
+  <header class="bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-     <nav aria-label="Primary Navigation" class="flex items-center justify-between h-20">
-      <div class="flex items-center space-x-4">
-         <img alt= class="w-10 h-10" height="80" src="images/LOGO.png" width="80"/>
-         <span class="font-semibold text-lg text-[#2a4a1f]">
-          FinancialKu
-      </div>
-      <ul class="hidden md:flex items-center space-x-6 text-[14px] font-semibold text-[#e9ffbe] select-none">
-       <li>
-        <a class="hover:text-white transition-colors" href="Home.html">
+      <nav aria-label="Primary Navigation" class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <img alt=class="w-10 h-10" height="100" src="images/LOGO.png" width="100" />
+          <span class="font-semibold text-lg text-[#3F704D]">
+            FinancialKu
+        </div>
+        <ul class="hidden md:flex items-center space-x-6 text-[14px] font-semibold text-[#7aa92a] select-none">
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="Home.html"">
           HOME
          </a>
-       </li>
-       <li>
-         <a class="hover:text-white transition-colors" href="inshight.html">
-           INSIGHT
+      </li>
+      <li>
+        <a class="hover:text-[#3F704D] transition-colors" href="overview.html">
+              INSIGHT
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="laporankeuangan.html">
+              LAPORAN KEUANGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="transaksi.html">
+              TRANSAKSI
+            </a>
+          </li>
+          <li>
+            <a class="text-[#3F704D] font-extrabold" href="celengan.html">
+              CELENGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="edukasi.html">
+              EDUKASI
+            </a>
+          </li>
+        </ul>
+        <div class="hidden md:flex items-center space-x-3 text-[13px] font-extrabold select-none">
+          <a class="text-[#7aa92a] hover:text-[#3F704D] transition-colors" href="daftar2.html">
+            DAFTAR
           </a>
-       </li>
-       <li>
-         <a class="hover:text-white transition-colors" href="laporankeuangan.html">
-           LAPORAN KEUANGAN
+          <a class="bg-[#7aa92a] rounded-full text-white font-bold text-xs px-4 py-1.5 transition-colors duration-300 hover:bg-[#3F704D] hover:text-white shadow-md hover:shadow-lg active:scale-95"
+            href="masuk.html">
+            MASUK
           </a>
-       </li>
-       <li>
-         <a class="hover:text-white transition-colors" href="transaksi.html">
-           TRANSAKSI
-          </a>
-       </li>
-       <li>
-        <a class="text-white font-extrabold hover:text-white transition-colors" href="celengan.html"">
-          CELENGAN
-         </a>
-       </li>
-       <li>
-         <a class="hover:text-white transition-colors" href="edukasi.html">
-           EDUKASI
-          </a>
-       </li>
-      </ul>
-      <div class="hidden md:flex items-center space-x-3 text-[13px] font-extrabold select-none">
-       <a class="text-white hover:text-[#7aa92a] transition-colors" href="daftar2.html">
-        DAFTAR
-       </a>
-       <a class="bg-white rounded-full text-[#7aa92a] font-bold text-xs px-4 py-1.5 transition-colors duration-300 hover:bg-[#7aa92a] hover:text-white shadow-md hover:shadow-lg active:scale-95" href="masuk.html">
-         MASUK
-       </a>
-      </div>
-      <div class="md:hidden">
-       <button aria-label="Open menu" class="text-white focus:outline-none" id="mobile-menu-button">
-        <i class="fas fa-bars fa-lg">
-        </i>
-       </button>
-      </div>
-     </nav>
+        </div>
+        <div class="md:hidden">
+          <button aria-label="Open menu" class="text-white focus:outline-none" id="mobile-menu-button">
+            <i class="fas fa-bars fa-lg">
+            </i>
+          </button>
+        </div>
+      </nav>
     </div>
+  </header>
+
   <!-- Main content -->
   <main class="flex flex-col items-center px-6 py-8 flex-grow">
-    <h1
-    class="font-fredoka text-white text-4xl sm:text-5xl md:text-6xl mb-4 select-none flex items-center gap-2 cursor-pointer"
-    onclick="document.getElementById('menu').classList.toggle('hidden')"
-  >
+    <h1 class="font-fredoka text-white text-4xl sm:text-5xl md:text-6xl mb-4 select-none flex items-center gap-2 cursor-pointer"
+    onclick="document.getElementById('menu').classList.toggle('hidden')">
     Celengan
-    <i class="fas fa-chevron-down text-white text-xl sm:text-2xl"></i>
-  </h1>
+     <i class="fas fa-chevron-down text-white text-xl sm:text-2xl"></i>
+    </h1>
   
   <div id="menu" class="hidden bg-white rounded shadow w-40 text-black">
     <a href="celengan2.html" class="block px-4 py-2 hover:bg-gray-100">Beli iPad</a>
