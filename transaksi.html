@@ -1,0 +1,275 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    Transaksi
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-[#c4e538] min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Primary Navigation" class="flex items-center justify-between h-20">
+          <div class="flex items-center">
+            <img alt=class="w-10 h-10" height="100" src="images/LOGO.png" width="100" />
+            <span class="font-semibold text-lg text-[#3F704D]">
+              FinancialKu
+          </div>
+          <ul class="hidden md:flex items-center space-x-6 text-[14px] font-semibold text-[#7aa92a] select-none">
+            <li>
+              <a class="hover:text-[#3F704D] transition-colors" href="index.html"">
+          HOME
+         </a>
+      </li>
+      <li>
+        <a class=" hover:text-[#3F704D] transition-colors" href="overview.html">
+                INSIGHT
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-[#3F704D] transition-colors" href="laporankeuangan.html">
+                LAPORAN KEUANGAN
+              </a>
+            </li>
+            <li>
+              <a class="text-[#3F704D] font-extrabold" href="transaksi.html">
+                TRANSAKSI
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-[#3F704D] transition-colors" href="celengan.html">
+                CELENGAN
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-[#3F704D] transition-colors" href="edukasi.html">
+                EDUKASI
+              </a>
+            </li>
+          </ul>
+          <div class="hidden md:flex items-center space-x-3 text-[13px] font-extrabold select-none">
+            <a class="text-[#7aa92a] hover:text-[#3F704D] transition-colors" href="daftar2.html">
+              DAFTAR
+            </a>
+            <a class="bg-[#7aa92a] rounded-full text-white font-bold text-xs px-4 py-1.5 transition-colors duration-300 hover:bg-[#3F704D] hover:text-white shadow-md hover:shadow-lg active:scale-95"
+              href="masuk.html">
+              MASUK
+            </a>
+          </div>
+          <div class="md:hidden">
+            <button aria-label="Open menu" class="text-white focus:outline-none" id="mobile-menu-button">
+              <i class="fas fa-bars fa-lg">
+              </i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <main class="max-w-7xl mx-auto">
+      <h1 class="text-white font-extrabold text-4xl mb-6 select-none" style="font-family: 'Poppins', sans-serif">
+        Transaksi
+        <span class="text-white">
+          ...
+        </span>
+      </h1>
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-6">
+        <form aria-label="Search transactions"
+          class="flex items-center bg-[#d9e0c7] rounded-xl px-4 py-2 max-w-md w-full" role="search">
+          <input aria-label="Search transactions"
+            class="bg-transparent placeholder-[#7f9a6a] text-[#7f9a6a] text-sm focus:outline-none flex-grow"
+            placeholder="Temukan transaksi..." type="search" />
+          <button aria-label="Search" class="text-[#7f9a6a] ml-2 focus:outline-none" type="submit">
+            <i class="fas fa-search">
+            </i>
+          </button>
+        </form>
+        <div aria-label="Transaction action buttons"
+          class="bg-[#d9e0c7] rounded-xl p-2 flex flex-col gap-2 max-w-xs w-full">
+          <a href="buattransaksi.html"
+            class="flex items-center gap-2 border border-[#7f9a6a] rounded-full px-4 py-1 text-[#7f9a6a] text-sm font-normal hover:bg-[#c7d1a9] transition"
+            type="button">
+            <i class="fas fa-plus text-[#3f5a3a]">
+            </i>
+            Buat Transaksi
+          </a>
+
+          <a href="buatpendapatan.html"
+            class="flex items-center gap-2 border border-[#7f9a6a] rounded-full px-4 py-1 text-[#7f9a6a] text-sm font-normal hover:bg-[#c7d1a9] transition"
+            type="button">
+            <i class="fas fa-plus text-[#3f5a3a]">
+            </i>
+            Input Pendapatan
+          </a>
+        </div>
+      </div>
+      <p class="text-xs text-[#a9c18e] mb-2 text-right font-semibold">
+        Langsung ke -
+        <span class="text-red-600 font-bold">
+          Maret
+        </span>
+      </p>
+      <div aria-label="Transaction table" class="overflow-x-auto rounded-xl bg-[#d9e0c7] p-4" role="region">
+        <table class="w-full text-[#7f9a6a] text-sm border-separate border-spacing-y-2">
+          <thead>
+            <tr class="text-[#3f5a3a] font-semibold text-left border-b border-[#7f9a6a]">
+              <th class="pl-4 py-2 min-w-[110px]">
+                Tanggal
+              </th>
+              <th class="py-2 min-w-[100px]">
+                Kategori
+              </th>
+              <th class="py-2 min-w-[140px]">
+                Nama Barang
+              </th>
+              <th class="py-2 min-w-[100px]">
+                Jenis
+              </th>
+              <th class="pr-4 py-2 min-w-[100px] text-right">
+                Harga
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#7f9a6a]">
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Bulanan
+              </td>
+              <td class="py-2">
+                Mie Kering
+              </td>
+              <td class="py-2">
+                Dana
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 45.000
+              </td>
+            </tr>
+            <tr class="border-b border-[#7f9a6a]">
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Bulanan
+              </td>
+              <td class="py-2">
+                Sirup ABC
+              </td>
+              <td class="py-2">
+                Cash
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 9.000
+              </td>
+            </tr>
+            <tr class="border-b border-[#7f9a6a]">
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Bulanan
+              </td>
+              <td class="py-2">
+                Gelang
+              </td>
+              <td class="py-2">
+                Cash
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 55.000
+              </td>
+            </tr>
+            <tr class="border-b border-[#7f9a6a]">
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Harian
+              </td>
+              <td class="py-2">
+                Telur dinosaurus
+              </td>
+              <td class="py-2">
+                Cash
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 32.000
+              </td>
+            </tr>
+            <tr class="border-b border-[#7f9a6a]">
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Harian
+              </td>
+              <td class="py-2">
+                Baju kaos
+              </td>
+              <td class="py-2">
+                Rekening
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 70.000
+              </td>
+            </tr>
+            <tr class="border-b border-[#7f9a6a]">
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Bulanan
+              </td>
+              <td class="py-2">
+                Sendal swallow
+              </td>
+              <td class="py-2">
+                Rekening
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 10.000
+              </td>
+            </tr>
+            <tr>
+              <td class="pl-4 py-2">
+                01 Maret 2025
+              </td>
+              <td class="py-2">
+                Harian
+              </td>
+              <td class="py-2">
+                Susu ultra pink
+              </td>
+              <td class="py-2">
+                Dana
+              </td>
+              <td class="pr-4 py-2 text-right">
+                Rp. 6.000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
