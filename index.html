@@ -1,0 +1,310 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    FinancialKu
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Primary Navigation" class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <img alt=class="w-10 h-10" height="100" src="images/LOGO.png" width="100" />
+          <span class="font-semibold text-lg text-[#3F704D]">
+            FinancialKu
+        </div>
+        <ul class="hidden md:flex items-center space-x-6 text-[14px] font-semibold text-[#7aa92a] select-none">
+          <li>
+            <a class="text-[#3F704D] font-extrabold" href="Home.html"">
+          HOME
+         </a>
+      </li>
+      <li>
+        <a class=" hover:text-[#3F704D] transition-colors" href="overview.html">
+              INSIGHT
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="laporankeuangan.html">
+              LAPORAN KEUANGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="transaksi.html">
+              TRANSAKSI
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="celengan.html">
+              CELENGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="edukasi.html">
+              EDUKASI
+            </a>
+          </li>
+        </ul>
+        <div class="hidden md:flex items-center space-x-3 text-[13px] font-extrabold select-none">
+          <a class="text-[#7aa92a] hover:text-[#3F704D] transition-colors" href="daftar2.html">
+            DAFTAR
+          </a>
+          <a class="bg-[#7aa92a] rounded-full text-white font-bold text-xs px-4 py-1.5 transition-colors duration-300 hover:bg-[#3F704D] hover:text-white shadow-md hover:shadow-lg active:scale-95"
+            href="masuk.html">
+            MASUK
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button aria-label="Open menu" class="text-white focus:outline-none" id="mobile-menu-button">
+            <i class="fas fa-bars fa-lg">
+            </i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-[#c9e74a] to-[#D1EA46]" style="height: 87vh; position: relative;">
+    <div class="relative overflow-hidden pt-12 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-0 px-10">
+        <div class="max-w-xl text-white">
+          <h1
+            class="font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight mb-3 drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]">
+            Smart Money, Smart Life!
+          </h1>
+          <p class="text-sm sm:text-base font-normal mb-6 drop-shadow-[0_1px_1px_rgba(0,0,0,0.25)]">
+            Akses keuangan dengan mudah, aman, dan nyaman kapan saja dan
+            di mana saja untuk mendukung gaya hidup finansial yang lebih baik.
+          </p>
+          <button
+            class="flex items-center gap-2 bg-white text-[#7aa92a] hover:text-[#3F704D] font-semibold text-xs sm:text-sm rounded-full px-5 py-2 shadow-md hover:shadow-lg transition">
+            Mulai Cerdas Kelola Uang!
+            <i class="fas fa-chevron-right text-[#7aa92a] hover:text-[#3F704D]">
+            </i>
+          </button>
+        </div>
+        <div class="relative w-80 sm:w-96 md:w-[28rem]">
+          <img class=" rounded-lg drop-shadow-lg" height="620" src="images/home/icon.png" width="360" />
+        </div>
+      </div>
+    </div>
+    <img class="w-full h-auto rounded-lg drop-shadow-lg" src="images/home/coba.png"
+      style="position: absolute;bottom: 0;" />
+  </section>
+
+  <!-- Simak cara kerjanya Section -->
+  <section class="mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center" style="height: 87vh; position: relative;">
+    <h2 class="text-[#4a7a1f] font-extrabold sm:text-2xl mb-3" style="font-family: 'Poppins', sans-serif; font-size: x-large;">
+      Simak cara kerjanya
+    </h2>
+    <p class="text-gray-700 italic text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
+      Website ini memberikan tampilan sederhana dan dirancang untuk memberikan
+      solusi keuangan dasar dan di targetkan untuk masyarakat umum yang ingin
+      memiliki kendali atas pemasukan dan pengeluaran serta merencanakan masa
+      depan finansial mereka.
+    </p>
+  </section>
+
+  <!-- Tentang Layanan Kami Section -->
+  <section class="bg-[#95CF5F] py-12" style="height: 87vh; position: relative;">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h3 class="text-[#4a7a1f] font-extrabold text-lg sm:text-xl mb-10" style="font-family: 'Poppins', sans-serif;">
+        Tentang Layanan Kami
+      </h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-y-6 justify-items-center">
+        <div class="flex flex-col items-center space-y-2 max-w-[90px]">
+          <div class="w-20 h-20 rounded-full bg-[#C7EA46] flex items-center justify-center">
+            <img class="w-full h-full object-contain" src="images/home/Dashboard.png" alt="Dashboard Icon" />
+          </div>
+          <p class="text-xs text-[#4a7a1f]">
+            Dashboard Keuangan
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-2 max-w-[90px]">
+          <div class="w-20 h-20 rounded-full bg-[#C7EA46] flex items-center justify-center">
+            <img class="w-20 h-20" src="images/home/kalkulator.png" alt="Kalkulator Icon" />
+          </div>
+          <p class="text-xs text-[#4a7a1f]">
+            Kalkulator Keuangan
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-2 max-w-[90px]">
+          <div class="w-20 h-20 rounded-full bg-[#C7EA46] flex items-center justify-center">
+            <img class="w-20 h-20" src="images/home/edukasi (2).png" alt="Kalkulator Icon" />
+          </div>
+          <p class="text-xs text-[#4a7a1f]">
+           Edukasi Finansial
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-8 justify-items-center mt-10">
+
+        <div class="flex flex-col items-center space-y-2 max-w-[90px]">
+          <div class="w-20 h-20 rounded-full bg-[#C7EA46] flex items-center justify-center">
+            <img class="w-20 h-20" src="images/home/catatan.png" alt="Catatan Keuangan Icon" />
+          </div>
+          <p class="text-xs text-[#4a7a1f]">
+            Catatan Keuangan Pintar
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-2 max-w-[90px]">
+          <div class="w-20 h-20 rounded-full bg-[#C7EA46] flex items-center justify-center">
+            <img class="w-20 h-20" src="images/home/keamanan.png" alt="Keamanan Icon" />
+          </div>
+          <p class="text-xs text-[#4a7a1f]">
+            Keamanan &amp; Personalisasi
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Di balik FinansialKu Section -->
+  <section
+    class="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-12 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16">
+    <div class="flex-shrink-0 w-48 h-64 md:w-56 md:h-72 rounded-md overflow-hidden">
+      <img alt="Portrait of a woman with red hijab, dark background" class="w-full h-full object-cover" height="288"
+        src="images/home/fotoku.jpg" width="224" />
+    </div>
+    <div class="max-w-xl text-[#2a4a1f]">
+      <h4 class="font-extrabold text-lg sm:text-xl mb-3">
+        Di balik FinansialKu
+      </h4>
+      <p class="text-sm sm:text-base font-light leading-relaxed">
+        Hai! Aku Siti Nurhaliza Adhani Arsalati, mahasiswa Digital Business yang suka
+        ngulik teknologi dan strategi digital. Di proyek FinansialKu, aku berperan dalam
+        merancang website yang simpel tapi tetap informatif, supaya asyik dan mudah
+        dipahami! Jadi lebih gampang dipahami. Dari bikin user persona sampai storyboard,
+        semuanya dirancang biar pengguna merasa nyaman dan terbantu.
+        <br />
+        <br />
+        Selain sibuk di dunia digital, aku juga aktif di berbagai proyek merintis dan
+        pariwisata. Buatku, teknologi harus bisa jadi solusi nyata yang bermanfaat. Jadi,
+        kalo ada yang bisa dikembangkan bareng, let's connect!
+      </p>
+    </div>
+  </section>
+  <!-- Pengelolaan Keuangan Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h3 class="text-[#4a7a1f] font-extrabold text-lg sm:text-xl text-center mb-2"
+      style="font-family: 'Poppins', sans-serif;">
+      Pengelolaan Keuangan
+    </h3>
+    <p class="text-[#4a7a1f] font-semibold text-center mb-10" style="font-family: 'Poppins', sans-serif;">
+      Praktis untuk Kebutuhan Sehari-hari
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-sm sm:text-base">
+      <div class="bg-[#7a8a6a] rounded-lg p-6 flex flex-col justify-between min-h-[220px]">
+        <p class="mb-6 italic leading-relaxed">
+          "Sebaiknya seorang pelaku, agar harus pintar mengelola keuangan,
+          sebagai dengan sadar dengan sadar tanpa yang modal. Pemanfaatan fungsi
+          memutus saja dalam menyesuaikan pengeluaran dan memanfaatkan
+          tabungan untuk masa depan. Pilih lembaga tepat, saat sangat beruntung
+          untuk mampu ke keuangan hidup stabil."
+        </p>
+        <div class="flex items-center space-x-3">
+          <img alt="Profile photo of Muh. Mahfuh Fahmi, Police officer, male with short hair"
+            class="w-10 h-10 rounded-full object-cover" height="40"
+            src="https://storage.googleapis.com/a1aa/image/8b3da82e-5976-4878-3cd4-deeb8d3dc507.jpg" width="40" />
+          <div>
+            <p class="font-semibold text-xs sm:text-sm">
+              Muh. Mahfuh Fahmi
+            </p>
+            <p class="text-xs sm:text-sm">
+              Polisi
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#7a8a6a] rounded-lg p-6 flex flex-col justify-between min-h-[220px]">
+        <p class="mb-6 italic leading-relaxed">
+          "Mengatur keuangan keluarga itu bukan hal mudah, apalagi dengan
+          dampak perubahan rumah tangga dan pendidikan anak. Sekor investasi,
+          saya bisa lebih tenang dalam mengelola dan anggaran selama dan
+          melatih untuk seperti memutuskan. Apalagi untuk modal digunakan,
+          cocok untuk ibu rumah tangga seperti saya!"
+        </p>
+        <div class="flex items-center space-x-3">
+          <img alt="Profile photo of Nelton Alifah Aspar, housewife, female with medium length hair"
+            class="w-10 h-10 rounded-full object-cover" height="40"
+            src="https://storage.googleapis.com/a1aa/image/6230a1cb-c4ab-4802-eb3d-9f7b7083bc90.jpg" width="40" />
+          <div>
+            <p class="font-semibold text-xs sm:text-sm">
+              Naifah Afifah Aspar
+            </p>
+            <p class="text-xs sm:text-sm">
+              Ibu Rumah Tangga
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#7a8a6a] rounded-lg p-6 flex flex-col justify-between min-h-[220px]">
+        <p class="mb-6 italic leading-relaxed">
+          "Dulu aku sering ditanyain ke mama uang jajan habis apa aja. Supih
+          pake Finansialku, aku jadi tahu soal cara mengatur uang ato mau
+          menabung sama ngatur revisi-revisi dan hob. Apalainnya supih buat
+          ngatur, jadi sukses ekonomi buat anak muda kayak aku."
+        </p>
+        <div class="flex items-center space-x-3">
+          <img alt="Profile photo of Faiqah Harahap, high school student, female with long hair"
+            class="w-10 h-10 rounded-full object-cover" height="40"
+            src="https://storage.googleapis.com/a1aa/image/6fb2c698-c7bf-411d-51ef-9c2791688808.jpg" width="40" />
+          <div>
+            <p class="font-semibold text-xs sm:text-sm">
+              Faiqah Hardianti
+            </p>
+            <p class="text-xs sm:text-sm">
+              Siswi SMA
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="max-w-md mx-auto px-4 sm:px-6 lg:px-8 pb-12 text-center">
+    <h3 class="text-[#4a7a1f] font-extrabold text-lg sm:text-xl mb-1" style="font-family: 'Poppins', sans-serif;">
+      Saatnya memulai!
+    </h3>
+    <p class="text-gray-700 text-sm sm:text-base mb-6">
+      Rencanakan, Kelola, Wujudkan.
+    </p>
+    <div>
+      <a href="daftar2.html"
+        class="bg-gradient-to-r from-[#f9a9a9] via-[#f9d18a] to-[#c9e74a] text-white font-semibold text-sm rounded-full py-3 px-16 hover:brightness-110 transition hover:shadow-lg inline-block text-center">
+        Daftar
+      </a>
+
+    </div>
+
+  </section>
+  <script>
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
