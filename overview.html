@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Overview Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="bg-white text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Primary Navigation" class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <img alt=class="w-10 h-10" height="100" src="images/LOGO.png" width="100" />
+          <span class="font-semibold text-lg text-[#3F704D]">
+            FinancialKu
+        </div>
+        <ul class="hidden md:flex items-center space-x-6 text-[14px] font-semibold text-[#7aa92a] select-none">
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="index.html"">
+          HOME
+            </a>
+          </li>
+          <li>
+            <a class=" text-[#3F704D] font-extrabold" href="overview.html"">
+              INSIGHT
+            </a>
+          </li>
+          <li>
+            <a class=" hover:text-[#3F704D] transition-colors" href="laporankeuangan.html">
+              LAPORAN KEUANGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="transaksi.html">
+              TRANSAKSI
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="celengan.html">
+              CELENGAN
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#3F704D] transition-colors" href="edukasi.html">
+              EDUKASI
+            </a>
+          </li>
+        </ul>
+        <div class="hidden md:flex items-center space-x-3 text-[13px] font-extrabold select-none">
+          <a class="text-[#7aa92a] hover:text-[#3F704D] transition-colors" href="daftar2.html">
+            DAFTAR
+          </a>
+          <a class="bg-[#7aa92a] rounded-full text-white font-bold text-xs px-4 py-1.5 transition-colors duration-300 hover:bg-[#3F704D] hover:text-white shadow-md hover:shadow-lg active:scale-95"
+            href="masuk.html">
+            MASUK
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button aria-label="Open menu" class="text-white focus:outline-none" id="mobile-menu-button">
+            <i class="fas fa-bars fa-lg">
+            </i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main
+    class="bg-gradient-to-br from-[#c0e34a] to-[#c9e74a] min-h-screen flex flex-col px-4 sm:px-6 lg:px-8 py-8 flex-1">
+    <!-- Overview Section -->
+    <section class="flex flex-col md:flex-row md:items-center md:space-x-6">
+      <div>
+        <h1 class="font-bold text-white text-4xl md:text-5xl mb-1 select-none">OVERVIEW</h1>
+        <p class="text-[#4a5f3a] font-semibold text-sm md:text-base select-none">18 Maret 2025</p>
+      </div>
+
+      <div class="flex items-center bg-[#d1dfb9cc] rounded-xl p-4 mt-4 md:mt-0 md:flex-1">
+        <img src="images/insight/saldo.png" alt="Wallet Icon" class="w-10 h-10 mr-4 flex-shrink-0" />
+        <div class="flex justify-between w-full items-center">
+          <div class="text-[#2f4f2f] font-semibold text-sm md:text-base leading-tight">
+            <p>Saldo Cash/</p>
+            <p>Rekening/ Dana</p>
+          </div>
+          <p class="text-[#2f4f2f] font-extrabold text-lg md:text-2xl whitespace-nowrap">Rp. 4.000.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ringkasan Keuangan -->
+    <section class="mb-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex items-center space-x-4">
+        <img src="images/insight/pemasukan.png" alt="Money In" class="w-7 h-7" />
+        <div>
+          <p class="text-xs text-[#4a5f3a] mb-1 select-none">Pemasukan</p>
+          <p class="text-[#2f4f2f] font-extrabold text-base select-none">Rp. 10.000.000</p>
+        </div>
+      </div>
+      <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex items-center space-x-4">
+        <img src="images/insight/keluar.png" alt="Money Out" class="w-7 h-7" />
+        <div>
+          <p class="text-xs text-[#4a5f3a] mb-1 select-none">Pengeluaran</p>
+          <p class="text-[#2f4f2f] font-extrabold text-base select-none">Rp. 5.000.000</p>
+        </div>
+      </div>
+      <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex items-center space-x-4">
+        <img src="images/insight/dollar.png" alt="Savings" class="w-10 h-10" />
+        <div>
+          <p class="text-xs text-[#4a5f3a] mb-1 select-none">Tabungan</p>
+          <p class="text-[#2f4f2f] font-extrabold text-base select-none">Rp. 2.000.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transaksi & Celengan -->
+    <section class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+      <!-- Transaksi Terakhir -->
+      <div class="bg-[#d1dfb9cc] rounded-xl p-4 flex-1">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="font-semibold text-[#2f4f2f] text-lg select-none">Transaksi Terakhir</h2>
+          <button class="bg-[#2f4f2f] text-white rounded px-2 py-1 text-lg font-bold">&gt;</button>
+        </div>
+        <table class="w-full text-sm text-[#2f4f2f]">
+          <tbody>
+            <!-- Transaksi rows seperti yang sudah kamu buat -->
+            <!-- Tambahkan konten transaksi seperti sebelumnya -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Celengan -->
+      <div class="bg-[#d1dfb9cc] rounded-xl p-4 w-full md:w-[320px] flex flex-col space-y-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-semibold text-[#2f4f2f] text-lg select-none">Celengan</h2>
+          <button class="bg-[#2f4f2f] text-white rounded px-2 py-1 text-lg font-bold">&gt;</button>
+        </div>
+
+        <!-- Celengan Items -->
+        <!-- Item 1 -->
+        <div class="bg-white bg-opacity-20 rounded-lg p-3">
+          <p class="font-semibold text-xs text-[#2f4f2f]">Beli Ipad</p>
+          <p class="text-[9px] text-[#2f4f2f] mb-1">Target, Juni 2025</p>
+          <div class="flex justify-between text-[9px] text-[#2f4f2f] mb-1">
+            <span>Rp. 2.000 / 10.500.000</span>
+            <i class="fas fa-shield-alt text-[#2f4f2f]"></i>
+          </div>
+          <div class="w-full bg-[#2f4f2f] bg-opacity-20 rounded-full h-3">
+            <div class="bg-[#2f4f2f] h-3 rounded-full w-[0.06%]"></div>
+          </div>
+          <p class="text-[8px] text-[#2f4f2f] mt-0.5">0,02%</p>
+        </div>
+
+        <!-- Tambahkan celengan lainnya seperti "Renov Rumah", "Ke Korea", dll -->
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
