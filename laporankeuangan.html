@@ -79,113 +79,81 @@
   </header>
 
 
-  <main class="max-w-7xl mx-auto px-6 pb-12">
-    <h1 class="text-4xl font-bold mb-8">
-      Laporan Keuangan
-    </h1>
-    <section class="flex flex-col sm:flex-row sm:space-x-6 space-y-6 sm:space-y-0 mb-12">
-      <div class="flex items-center space-x-4 bg-[#C9D6B9] rounded-xl px-6 py-4 flex-1 max-w-xs">
-        <img alt="Icon of cash money, green color" class="w-10 h-10" height="40" src="images/laporan keuangan/cash.png"
-          width="40" />
-        <div>
-          <p class="text-xs font-bold text-[#3B5A40]">
-            Rp. 500.000
-          </p>
-          <p class="text-[9px] text-[#3B5A40]">
-            Total Transaksi:
-          </p>
-          <p class="text-[9px] text-[#3B5A40]">
-            17 Transaksi
-          </p>
-          <p class="text-[9px] text-[#3B5A40] font-extrabold mt-1">
-            CASH
-          </p>
-        </div>
-      </div>
-      <div class="flex items-center space-x-4 bg-[#C9D6B9] rounded-xl px-6 py-4 flex-1 max-w-xs">
-        <img alt="Icon of a credit card, green color" class="w-10 h-10" height="40"
-          src="images/laporan keuangan/rekening.png" width="40" />
-        <div>
-          <p class="text-xs font-bold text-[#3B5A40]">
-            Rp. 350.000
-          </p>
-          <p class="text-[9px] text-[#3B5A40]">
-            Total Transaksi:
-          </p>
-          <p class="text-[9px] text-[#3B5A40]">
-            7 Transaksi
-          </p>
-          <p class="text-[9px] text-[#3B5A40] font-extrabold mt-1">
-            REKENING
-          </p>
-        </div>
-      </div>
-      <div class="flex items-center space-x-4 bg-[#C9D6B9] rounded-xl px-6 py-4 flex-1 max-w-xs">
-        <img alt="Icon of DANA app logo, green color" class="w-10 h-10" height="40"
-          src="images/laporan keuangan/dana.png" width="40" />
-        <div>
-          <p class="text-xs font-bold text-[#3B5A40]">
-            Rp. 170.000
-          </p>
-          <p class="text-[9px] text-[#3B5A40]">
-            Total Transaksi:
-          </p>
-          <p class="text-[9px] text-[#3B5A40]">
-            23 Transaksi
-          </p>
-          <p class="text-[9px] text-[#3B5A40] font-extrabold mt-1">
-            DANA
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="flex flex-col md:flex-row md:space-x-20 space-y-8 md:space-y-0">
-      <div class="flex flex-col space-y-4 max-w-xs">
-        <h2 class="text-2xl font-bold">
-          Catatan
-        </h2>
-        <pre class="bg-white text-black rounded-xl p-4 text-xs font-mono whitespace-pre-wrap" style="line-height: 1.2">
-Pondok Indah Mal Lt. 1
-Blok A2
-087888724250
+  <!-- Main Content -->
+  <div style="padding: 20px 50px;">
+    <h1 style="color: white; font-size: 48px; margin: 0 0 40px 0; font-weight: bold;">Laporan Keuangan</h1>
 
-==========================
-Tinta Epson              80.000
-1 x 80.000
-Ongkir Jakarta           9.000
-1 x 9.000
-==========================
-Total   Rp.              89.000
-Bayar   Rp.              90.000
-Kembali Rp.               1.000
+    <!-- Saldo Cards Container -->
+    <div style="display: flex; gap: 20px; margin-bottom: 40px;">
+      <!-- Cash Card -->
+      <div
+        style="background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 20px; flex: 1; display: flex; align-items: center;">
+        <div style="background: #2B5219; padding: 12px; border-radius: 10px; margin-right: 15px;">
+          <img src="images/laporan keuangan/cash.png" alt="Cash"
+            style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+        </div>
+        <div>
+          <h3 style="margin: 0; color: #2B5219; font-size: 24px;">Rp. 500.000</h3>
+          <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Total Transaksi: 17 Transaksi</p>
+        </div>
+        <p style="margin: 0 0 0 auto; color: #2B5219; font-weight: bold;">CASH</p>
+      </div>
 
-Barang yang sudah dibeli tidak
-dapat ditukar / dikembalikan.
-======= 2019-02-19 21:26 =======
-        </pre>
+      <!-- Rekening Card -->
+      <div
+        style="background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 20px; flex: 1; display: flex; align-items: center;">
+        <div style="background: #2B5219; padding: 12px; border-radius: 10px; margin-right: 15px;">
+          <img src="images/laporan keuangan/rekening.png" alt="Rekening"
+            style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+        </div>
+        <div>
+          <h3 style="margin: 0; color: #2B5219; font-size: 24px;">Rp. 350.000</h3>
+          <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Total Transaksi: 7 Transaksi</p>
+        </div>
+        <p style="margin: 0 0 0 auto; color: #2B5219; font-weight: bold;">REKENING</p>
       </div>
-      <div class="flex flex-col max-w-xs space-y-2">
-        <h3 class="text-lg font-bold">
-          Struk Belanja
-        </h3>
-        <p class="text-xs font-normal font-sans text-white/80">
-          Struk pembayaran tinta beserta ongkirnya untuk printer sekret.
-        </p>
+
+      <!-- Dana Card -->
+      <div
+        style="background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 20px; flex: 1; display: flex; align-items: center;">
+        <div style="background: #2B5219; padding: 12px; border-radius: 10px; margin-right: 15px;">
+          <img src="images/laporan keuangan/dana.png" alt="Dana"
+            style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+        </div>
+        <div>
+          <h3 style="margin: 0; color: #2B5219; font-size: 24px;">Rp. 170.000</h3>
+          <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Total Transaksi: 23 Transaksi</p>
+        </div>
+        <p style="margin: 0 0 0 auto; color: #2B5219; font-weight: bold;">DANA</p>
       </div>
-      <div class="flex flex-col max-w-xs space-y-2">
-        <h3 class="text-lg font-bold">
-          Nota Belanja
-        </h3>
-        <p class="text-xs font-normal font-sans text-white/80">
-          Nota pembelian bahan-bahan bukber logent 2023.
-        </p>
-        <img
-          alt="Receipt image showing a handwritten purchase note with columns for item name, price, and total, with a blue stamp at the bottom"
-          class="rounded-xl mt-2" height="160"
-          src="https://storage.googleapis.com/a1aa/image/8a557eee-13a6-41fc-faec-cf6a19f233ef.jpg" width="160" />
+    </div>
+
+    <!-- Catatan Section -->
+    <h2 style="color: white; font-size: 36px; margin: 0 0 30px 0;">Catatan</h2>
+    <div style="display: flex; gap: 30px;">
+      <!-- Receipt Image -->
+      <div style="background: white; padding: 20px; border-radius: 15px; width: 300px;">
+        <img src="images/laporan keuangan/struk.png" alt="Struk" style="width: 100%; height: auto;">
       </div>
-    </section>
-  </main>
+
+      <!-- Struk Belanja -->
+      <div style="flex: 1;">
+        <h3 style="color: white; margin: 0 0 15px 0;">Struk Belanja</h3>
+        <p style="color: white; margin: 0;">Struk pembayaran tinta beserta angkanya untuk printer sekret.</p>
+      </div>
+
+      <!-- Nota Belanja -->
+      <div style="background: white; padding: 20px; border-radius: 15px; width: 300px;">
+        <img src="images/laporan keuangan/nota.png" alt="Nota" style="width: 100%; height: auto;">
+      </div>
+
+      <!-- Nota Description -->
+      <div style="flex: 1;">
+        <h3 style="color: white; margin: 0 0 15px 0;">Nota Belanja</h3>
+        <p style="color: white; margin: 0;">Nota pembelian bahan-bahan bukber lagent 2023.</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
