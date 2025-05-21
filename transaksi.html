@@ -80,196 +80,101 @@
       </div>
     </header>
 
-
-    <main class="max-w-7xl mx-auto">
-      <h1 class="text-white font-extrabold text-4xl mb-6 select-none" style="font-family: 'Poppins', sans-serif">
-        Transaksi
-        <span class="text-white">
-          ...
-        </span>
-      </h1>
-      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-6">
-        <form aria-label="Search transactions"
-          class="flex items-center bg-[#d9e0c7] rounded-xl px-4 py-2 max-w-md w-full" role="search">
-          <input aria-label="Search transactions"
-            class="bg-transparent placeholder-[#7f9a6a] text-[#7f9a6a] text-sm focus:outline-none flex-grow"
-            placeholder="Temukan transaksi..." type="search" />
-          <button aria-label="Search" class="text-[#7f9a6a] ml-2 focus:outline-none" type="submit">
-            <i class="fas fa-search">
-            </i>
-          </button>
-        </form>
-        <div aria-label="Transaction action buttons"
-          class="bg-[#d9e0c7] rounded-xl p-2 flex flex-col gap-2 max-w-xs w-full">
-          <a href="buattransaksi.html"
-            class="flex items-center gap-2 border border-[#7f9a6a] rounded-full px-4 py-1 text-[#7f9a6a] text-sm font-normal hover:bg-[#c7d1a9] transition"
-            type="button">
-            <i class="fas fa-plus text-[#3f5a3a]">
-            </i>
-            Buat Transaksi
-          </a>
-
-          <a href="buatpendapatan.html"
-            class="flex items-center gap-2 border border-[#7f9a6a] rounded-full px-4 py-1 text-[#7f9a6a] text-sm font-normal hover:bg-[#c7d1a9] transition"
-            type="button">
-            <i class="fas fa-plus text-[#3f5a3a]">
-            </i>
-            Input Pendapatan
-          </a>
+    <!-- Main Content -->
+    <div style="padding: 20px 50px;">
+      <!-- Header Section -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
+        <h1 style="color: white; font-size: 48px; margin: 0; font-weight: bold;">Transaksi ...</h1>
+        <div style="background: rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 15px;">
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 10px;">
+              <a href="/buat-transaksi" style="text-decoration: none;">
+                <button
+                  style="display: flex; align-items: center; gap: 10px; background: transparent; border: none; cursor: pointer; width: 100%; padding: 5px;">
+                  <div
+                    style="background: #2B5219; width: 24px; height: 24px; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <span style="color: white; font-size: 18px;">+</span>
+                  </div>
+                  <span style="color: #2B5219; font-size: 14px;">Buat Transaksi</span>
+                </button>
+              </a>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 10px;">
+              <a href="/input-pendapatan" style="text-decoration: none;">
+                <button
+                  style="display: flex; align-items: center; gap: 10px; background: transparent; border: none; cursor: pointer; width: 100%; padding: 5px;">
+                  <div
+                    style="background: #2B5219; width: 24px; height: 24px; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <span style="color: white; font-size: 18px;">+</span>
+                  </div>
+                  <span style="color: #2B5219; font-size: 14px;">Input Pendapatan</span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <p class="text-xs text-[#a9c18e] mb-2 text-right font-semibold">
-        Langsung ke -
-        <span class="text-red-600 font-bold">
-          Maret
-        </span>
+
+      <!-- Search Bar -->
+      <form aria-label="Search transactions" class="flex items-center bg-white rounded-xl px-4 py-2 max-w-md w-full"
+        role="search">
+        <input aria-label="Search transactions"
+          class="bg-transparent placeholder-[#7f9a6a] text-[#7f9a6a] text-sm focus:outline-none flex-grow"
+          placeholder="Temukan transaksi..." type="search" />
+        <button aria-label="Search" class="text-[#7f9a6a] ml-2 focus:outline-none" type="submit">
+          <i class="fas fa-search">
+          </i>
+        </button>
+      </form>
+
+      <!-- Date Filter -->
+      <p style="color: white; text-align: right; margin-bottom: 20px; font-size: 14px;">
+        Langsung ke - <span style="color: #FF4B4B;">Maret</span>
       </p>
-      <div aria-label="Transaction table" class="overflow-x-auto rounded-xl bg-[#d9e0c7] p-4" role="region">
-        <table class="w-full text-[#7f9a6a] text-sm border-separate border-spacing-y-2">
+
+      <!-- Transaction Table -->
+      <div style="background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 20px;">
+        <table style="width: 100%; border-collapse: collapse;">
           <thead>
-            <tr class="text-[#3f5a3a] font-semibold text-left border-b border-[#7f9a6a]">
-              <th class="pl-4 py-2 min-w-[110px]">
-                Tanggal
+            <tr>
+              <th style="text-align: left; padding: 15px 10px; color: #2B5219; font-weight: normal;">Tanggal
               </th>
-              <th class="py-2 min-w-[100px]">
-                Kategori
+              <th style="text-align: left; padding: 15px 10px; color: #2B5219; font-weight: normal;">Kategori
               </th>
-              <th class="py-2 min-w-[140px]">
-                Nama Barang
+              <th style="text-align: left; padding: 15px 10px; color: #2B5219; font-weight: normal;">Nama
+                Barang</th>
+              <th style="text-align: left; padding: 15px 10px; color: #2B5219; font-weight: normal;">Jenis
               </th>
-              <th class="py-2 min-w-[100px]">
-                Jenis
-              </th>
-              <th class="pr-4 py-2 min-w-[100px] text-right">
-                Harga
+              <th style="text-align: right; padding: 15px 10px; color: #2B5219; font-weight: normal;">Harga
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr class="border-b border-[#7f9a6a]">
-              <td class="pl-4 py-2">
-                01 Maret 2025
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+              <td style="padding: 15px 10px; color: #666;">01 Maret 2025</td>
+              <td style="padding: 15px 10px; color: #2B5219;">Bulanan</td>
+              <td style="padding: 15px 10px; color: #666;">Mie Kering</td>
+              <td style="padding: 15px 10px;">
+                <span
+                  style="background: #87CEEB; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px;">Dana</span>
               </td>
-              <td class="py-2">
-                Bulanan
-              </td>
-              <td class="py-2">
-                Mie Kering
-              </td>
-              <td class="py-2">
-                Dana
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 45.000
-              </td>
+              <td style="padding: 15px 10px; text-align: right; color: #666;">Rp. 45.000</td>
             </tr>
-            <tr class="border-b border-[#7f9a6a]">
-              <td class="pl-4 py-2">
-                01 Maret 2025
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+              <td style="padding: 15px 10px; color: #666;">01 Maret 2025</td>
+              <td style="padding: 15px 10px; color: #2B5219;">Bulanan</td>
+              <td style="padding: 15px 10px; color: #666;">Sirup ABC</td>
+              <td style="padding: 15px 10px;">
+                <span
+                  style="background: #90EE90; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px;">Cash</span>
               </td>
-              <td class="py-2">
-                Bulanan
-              </td>
-              <td class="py-2">
-                Sirup ABC
-              </td>
-              <td class="py-2">
-                Cash
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 9.000
-              </td>
+              <td style="padding: 15px 10px; text-align: right; color: #666;">Rp. 9.000</td>
             </tr>
-            <tr class="border-b border-[#7f9a6a]">
-              <td class="pl-4 py-2">
-                01 Maret 2025
-              </td>
-              <td class="py-2">
-                Bulanan
-              </td>
-              <td class="py-2">
-                Gelang
-              </td>
-              <td class="py-2">
-                Cash
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 55.000
-              </td>
-            </tr>
-            <tr class="border-b border-[#7f9a6a]">
-              <td class="pl-4 py-2">
-                01 Maret 2025
-              </td>
-              <td class="py-2">
-                Harian
-              </td>
-              <td class="py-2">
-                Telur dinosaurus
-              </td>
-              <td class="py-2">
-                Cash
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 32.000
-              </td>
-            </tr>
-            <tr class="border-b border-[#7f9a6a]">
-              <td class="pl-4 py-2">
-                01 Maret 2025
-              </td>
-              <td class="py-2">
-                Harian
-              </td>
-              <td class="py-2">
-                Baju kaos
-              </td>
-              <td class="py-2">
-                Rekening
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 70.000
-              </td>
-            </tr>
-            <tr class="border-b border-[#7f9a6a]">
-              <td class="pl-4 py-2">
-                01 Maret 2025
-              </td>
-              <td class="py-2">
-                Bulanan
-              </td>
-              <td class="py-2">
-                Sendal swallow
-              </td>
-              <td class="py-2">
-                Rekening
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 10.000
-              </td>
-            </tr>
-            <tr>
-              <td class="pl-4 py-2">
-                01 Maret 2025
-              </td>
-              <td class="py-2">
-                Harian
-              </td>
-              <td class="py-2">
-                Susu ultra pink
-              </td>
-              <td class="py-2">
-                Dana
-              </td>
-              <td class="pr-4 py-2 text-right">
-                Rp. 6.000
-              </td>
-            </tr>
+            <!-- Tambahkan baris transaksi lainnya sesuai data -->
           </tbody>
         </table>
       </div>
-    </main>
-  </div>
+    </div>
 </body>
 
 </html>
