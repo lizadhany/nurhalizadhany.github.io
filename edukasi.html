@@ -76,71 +76,102 @@
     </div>
   </header>
 
-  <main class="max-w-[1200px] mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
-    <section class="space-y-2 max-w-[320px]">
-      <img src="https://storage.googleapis.com/a1aa/image/e0d7dc5a-b78b-45c2-0f53-eaf1d08b61a6.jpg"
-        alt="Hand holding phone with gold coins and financial chart floating above, dark green background"
-        class="rounded-xl w-full h-[140px] object-cover" width="320" height="140" />
-      <h2 class="text-white font-semibold text-[14px] leading-snug">
-        Smart Money: Kelola Keuangan Tanpa Ribet
-      </h2>
-      <p class="text-white text-[9px] leading-tight">
-        Bingung cara mengatur uang dengan efektif? Di sini, kamu akan belajar
-        teknik budgeting yang sederhana tapi powerful, supaya gaji atau uang
-        jajan nggak habis begitu saja
-      </p>
-    </section>
+  <!-- Main Content -->
+  <div style="padding: 20px 50px; position: relative;">
+    <!-- Search Bar -->
+    <div style="margin-bottom: 30px; max-width: 600px; position: relative;">
+      <input type="text" placeholder="Cari artikel edukasi..."
+        style="width: 100%; padding: 15px 45px 15px 20px; border: none; border-radius: 25px; background: rgba(255, 255, 255, 0.9); font-size: 14px; outline: none; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <button
+        style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; padding: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F704D"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
 
-    <section class="space-y-2 max-w-[320px]">
-      <img src="https://storage.googleapis.com/a1aa/image/594c47f6-918c-4350-9af5-527cbc9afc28.jpg"
-        alt="Jar with coins falling inside on light purple background" class="rounded-xl w-full h-[140px] object-cover"
-        width="320" height="140" />
-      <h2 class="text-white font-semibold text-[14px] leading-snug">
-        Nabung atau Investasi? Kenali Perbedaannya!
-      </h2>
-      <p class="text-white text-[9px] leading-tight">
-        Menabung itu penting, tapi investasi juga nggak kalah penting. Yuk,
-        pelajari kapan waktu yang tepat untuk menabung dan kapan harus mulai
-        berinvestasi agar keuanganmu makin berkembang.
-      </p>
-    </section>
+    <!-- Title -->
+    <h1
+      style="color: white; font-size: 64px; position: absolute; top: 50%; right: 50px; transform: translateY(-50%); margin: 0; z-index: 1; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+      Edukasi<br>&Tips
+    </h1>
 
-    <section class="hidden md:flex flex-col justify-center items-center select-none" aria-hidden="true">
-      <h1 class="text-white font-extrabold text-[40px] leading-[1.1] text-center">
-        Edukasi
-        <span class="text-[#a3d05a]">&amp;</span><br />
-        Tips
-      </h1>
-    </section>
+    <!-- Article Grid -->
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px;">
+      <!-- Article Cards -->
+      <a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/ways-to-save-money"
+        style="text-decoration: none; display: block;">
+        <article
+          style="background: rgba(43, 82, 25, 0.9); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          <img src="images/edukasi/1.jpg" alt="Smart Money" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h2 style="color: white; font-size: 20px; margin: 0 0 10px 0;">Smart Money: Kelola Keuangan Tanpa Ribet</h2>
+            <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; margin: 0; line-height: 1.6;">
+              Bingung cara mengatur uang dengan efektif? Di sini, kamu akan belajar teknik budgeting yang sederhana tapi
+              powerful, supaya gaji atau uang kamu nggak habis begitu saja.
+            </p>
+          </div>
+        </article>
+      </a>
 
-    <section class="space-y-2 max-w-[320px]">
-      <img src="https://storage.googleapis.com/a1aa/image/671ed81b-f43c-4ed5-9ed9-e4991da4f5eb.jpg"
-        alt="Hand holding empty wallet on green background" class="rounded-xl w-full h-[140px] object-cover" width="320"
-        height="140" />
-      <h2 class="text-white font-semibold text-[14px] leading-snug">
-        Hindari Jebakan Keuangan: Kesalahan yang Harus Dihindari
-      </h2>
-      <p class="text-white text-[9px] leading-tight">
-        Banyak orang nggak sadar kalau kebiasaan kecil bisa bikin keuangan
-        jadi berantakan. Artikel ini akan membahas kesalahan finansial paling
-        umum dan cara menghindarinya.
-      </p>
-    </section>
+      <a href="https://www.dbs.id/digibank/id/id/articles/dana-darurat-vs-investasi-mana-yang-harus-didahulukan"
+        style="text-decoration: none; display: block;">
+        <article
+          style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          <img src="images/edukasi/2.jpg" alt="Investasi" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h2 style="color: #2B5219; font-size: 20px; margin: 0 0 10px 0;">Nabung atau Investasi? Kenali Perbedaannya!
+            </h2>
+            <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.6;">
+              Menabung itu penting, tapi investasi juga nggak kalah penting. Yuk, pelajari kapan waktu yang tepat untuk
+              menabung dan kapan harus mulai berinvestasi agar keuanganmu makin berkembang.
+            </p>
+          </div>
+        </article>
+      </a>
 
-    <section class="space-y-2 max-w-[320px]">
-      <img src="https://storage.googleapis.com/a1aa/image/0f673a7f-6c30-4aca-102b-13d2e880c37c.jpg"
-        alt="Person holding folded cash in hands on beige background" class="rounded-xl w-full h-[140px] object-cover"
-        width="320" height="140" />
-      <h2 class="text-white font-semibold text-[14px] leading-snug">
-        Rahasia Bebas Finansial di Usia Muda
-      </h2>
-      <p class="text-white text-[9px] leading-tight">
-        Siapa bilang bebas finansial cuma buat orang kaya? Dengan strategi yang
-        tepat, kamu bisa mencapai kebebasan finansial lebih cepat. Temukan
-        langkah-langkahnya di sini!
-      </p>
-    </section>
-  </main>
+      <a href="https://www.dbs.id/digibank/id/id/articles/dana-darurat-vs-investasi-mana-yang-harus-didahulukan"
+        style="text-decoration: none; display: block;">
+        <article
+          style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          <img src="images/edukasi/3.jpeg" alt="Jebakan Keuangan"
+            style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h2 style="color: #2B5219; font-size: 20px; margin: 0 0 10px 0;">Hindari Jebakan Keuangan: Kesalahan yang
+              Harus Dihindari</h2>
+            <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.6;">
+              Banyak orang nggak sadar kalau kebiasaan kecil bisa bikin keuangan jadi berantakan. Artikel ini akan
+              membahas kesalahan finansial paling umum dan cara menghindarinya.
+            </p>
+          </div>
+        </article>
+      </a>
+
+      <a href="https://blog.principal.co.id/rahasia-sukses-bebas-finansial-di-usia-muda"
+        style="text-decoration: none; display: block;">
+        <article
+          style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          <img src="images/edukasi/4.jpg" alt="Bebas Finansial" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h2 style="color: #2B5219; font-size: 20px; margin: 0 0 10px 0;">Rahasia Bebas Finansial di Usia Muda</h2>
+            <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.6;">
+              Siapa bilang bebas finansial cuma buat orang kaya? Dengan strategi yang tepat, kamu bisa mencapai
+              kebebasan finansial lebih cepat. Temukan langkah-langkahnya di sini!
+            </p>
+          </div>
+        </article>
+      </a>
+    </div>
+  </div>
+
+  <style>
+    a:hover article {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </body>
 
 </html>
